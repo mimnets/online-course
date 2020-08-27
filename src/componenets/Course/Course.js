@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Course = (props) => {
-    const {title, summary, icon_url, url, duration_in_minutes, levels} = props.title;
+    const {title, summary, icon_url, url, duration_in_minutes, levels} = props.catalogue;
     return (
         <div>
             <h3>Course Name: {title}</h3>
@@ -13,7 +13,8 @@ const Course = (props) => {
             <img src={icon_url} alt=""/>
             <button>Enrol Now</button>
             </div>
-        </div>
+
+            </div>
     );
 };
 
