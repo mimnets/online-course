@@ -1,4 +1,5 @@
 import React from 'react';
+import { Jumbotron, Container } from 'react-bootstrap';
 
 const Cart = (props) => {
     const cart = props.cart;
@@ -10,8 +11,13 @@ const Cart = (props) => {
     }
     return (
         <div>
-            <h1>Price :</h1>
-            <h2>Total Price : ${totalPrice}</h2>
+            <Jumbotron Fluid>
+                <Container>
+                <h1>Price</h1>
+                <h2>Total Price : ${totalPrice}</h2>
+                </Container>
+  
+            </Jumbotron>
         </div>
     );
 };

@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="course-container">
-      <h1>Microsoft Learn Catalog</h1>
+      <h1>Microsoft Learn Catalogue</h1>
         
         {
           course.slice(10,25).map(modules => <Course 
