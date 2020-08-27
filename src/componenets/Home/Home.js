@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Course from '../Course/Course';
 import Cart from '../Cart/Cart';
+import '../Home/Home.css'
 
 const Home = () => {
   const [course, setCourse] = useState([]);
+  let [cart, setCart] = useState([]);
+  const handleAddCourse = (course) =>{
+    const newCart = [...cart, course];
+    setCart(newCart);
+  }
         // console.log(course);
         useEffect(() => {
         fetch('https://docs.microsoft.com/api/learn/catalog/?modules=15')
@@ -17,11 +23,13 @@ const Home = () => {
       <h1>Microsoft Learn Catalog</h1>
         
         {
-          course.slice(10,25).map(modules => <Course catalogue ={modules}></Course>)
+          course.slice(10,25).map(modules => <Course 
+            handleAddCourse ={handleAddCourse}
+            course={modules}></Course>)
         }
       </div>
       <div className="cart-container">
-        <Cart></Cart>
+        <Cart cart={cart}></Cart>
       </div>
     </div>
   );
