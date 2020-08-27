@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Course from './componenets/Course/Course';
+import Header from './componenets/Course/Header/Header';
 
 function App() {
   const [course, setCourse] = useState([]);
@@ -17,6 +18,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
+      {/* <Header></Header> */}
       <div>
         <h1>Microsoft Learn Catalog</h1>
         {

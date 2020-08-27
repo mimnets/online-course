@@ -8,7 +8,7 @@ const Course = (props) => {
             <p>{summary}</p>
             <p>Learning Level : <strong>{levels}</strong></p>
             <p>Price : ${duration_in_minutes}</p>
-            <p><a href={url} target="_blank">More Details</a></p>
+            <p><a href={url} target="_blank" rel="noreferrer">More Details</a></p>
             <div>
             <img src={icon_url} alt=""/>
             <button>Enrol Now</button>
