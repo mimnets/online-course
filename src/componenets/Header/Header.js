@@ -15,7 +15,7 @@ const Header = () => {
                 <a href="/my-course">My Course</a>
             </nav> */}
             <Navbar bg="dark" variant="dark" fixed="top">
-    <Navbar.Brand href="/home">Online Course</Navbar.Brand>
+    <Navbar.Brand href="/">Online Course</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="/home">Home</Nav.Link>
       <Nav.Link href="/dashboard">Dashboard</Nav.Link>
