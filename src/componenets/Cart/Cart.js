@@ -11,12 +11,11 @@ const Cart = (props) => {
     }
     return (
         <div>
-            <Jumbotron Fluid>
+            <Jumbotron>
                 <Container>
                 <h1>Price</h1>
                 <h2>Total Price : ${totalPrice}</h2>
                 </Container>
-  
             </Jumbotron>
         </div>
     );
